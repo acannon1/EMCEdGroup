@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMC Education Group - Professional Development Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-indigo-600">EMC</h1>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="#services" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Services</a>
+                        <a href="#about" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <!-- <a href="#founder" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Our Founder</a> -->
+                        <a href="#contact" class="nav-link text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-indigo-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+                <a href="#home" class="mobile-nav-link block text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#services" class="mobile-nav-link block text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#about" class="mobile-nav-link block text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">About</a>
+                <!-- <a href="#founder" class="mobile-nav-link block text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">Our Founder</a> -->
+                <a href="#contact" class="mobile-nav-link block text-gray-700 hover:text-indigo-600 px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">EMC Education Group</h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Providing quality school professional development to ensure all students meet educational standards and improve overall school performance</p>
+                <a href="#contact" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors inline-block">Get Started Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">We work in collaboration with clients to provide scientific research-based solutions for high impact results</p>
+                
+
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card-hover bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Professional Development</h3>
+                    <p class="text-gray-600">Comprehensive training programs designed to enhance educator skills and improve student outcomes</p>
+                </div>
+                
+                <div class="card-hover bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Data Analysis</h3>
+                    <p class="text-gray-600">Evidence-based insights to drive informed decision-making and track student progress effectively</p>
+                </div>
+                
+                <div class="card-hover bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Technology Integration</h3>
+                    <p class="text-gray-600">Modern educational technology solutions to enhance learning experiences and classroom efficiency</p>
+                </div>
+                
+                <div class="card-hover bg-gray-50 p-6 rounded-lg text-center">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Coaching & Modeling</h3>
+                    <p class="text-gray-600">Personalized coaching and instructional modeling to support continuous improvement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About EMC Education Group</h2>
+                    <p class="text-lg text-gray-600 mb-6">EMC specializes in providing quality school professional development designed to ensure all students meet educational standards and improve overall school performance.</p>
+                    <p class="text-lg text-gray-600 mb-6">We work in collaboration with our clients to provide scientific research-based solutions that deliver high impact results. Our comprehensive approach addresses the unique needs of each educational institution.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
+                            <span class="text-gray-700">Research-based methodologies</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
+                            <span class="text-gray-700">Collaborative approach with clients</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
+                            <span class="text-gray-700">Focus on measurable outcomes</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-2 h-2 bg-indigo-600 rounded-full mr-3"></div>
+                            <span class="text-gray-700">Customized solutions for each school</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Impact</h3>
+                    <div class="space-y-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-indigo-600 mb-2">500+</div>
+                            <div class="text-gray-600">Educators Trained</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-indigo-600 mb-2">50+</div>
+                            <div class="text-gray-600">Schools Served</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-indigo-600 mb-2">95%</div>
+                            <div class="text-gray-600">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Section -->
+    <!-- <section id="founder" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Meet Our Founder</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Dedicated to transforming education through 30 years of experience and unwavering commitment to student success</p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+                
+                <div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">Shundra Cannon</h3>
+                    <p class="text-lg text-gray-600 mb-6">Mrs. Cannon has made education her lifelong work and strives to ensure student success through innovative leadership and research-based practices.</p>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-xl font-semibold text-indigo-600 mb-3">Education & Credentials</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-start">
+                                    <div class="w-2 h-2 bg-indigo-600 rounded-full mr-3 mt-2"></div>
+                                    <span class="text-gray-700"><strong>Bachelor of Arts in Marketing</strong> - Hampton University</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="w-2 h-2 bg-indigo-600 rounded-full mr-3 mt-2"></div>
+                                    <span class="text-gray-700"><strong>Masters of School Administration and Mid-Management</strong> - University of Houston</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-xl font-semibold text-indigo-600 mb-3">30 Years of Educational Excellence</h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h5 class="font-semibold text-gray-900 mb-2">Leadership Roles</h5>
+                                    <ul class="text-sm text-gray-600 space-y-1">
+                                        <li>• Teacher</li>
+                                        <li>• Principal</li>
+                                        <li>• Mentor</li>
+                                        <li>• Professional Development Provider</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h5 class="font-semibold text-gray-900 mb-2">Areas of Impact</h5>
+                                    <ul class="text-sm text-gray-600 space-y-1">
+                                        <li>• Teacher Training</li>
+                                        <li>• Principal Development</li>
+                                        <li>• School Reform</li>
+                                        <li>• Educational Innovation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-xl font-semibold text-indigo-600 mb-3">Awards & Recognition</h4>
+                            <div class="bg-gradient-to-r from-yellow-50 to-yellow-100 p-4 rounded-lg border-l-4 border-yellow-400">
+                                <div class="space-y-2">
+                                    <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-yellow-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                        </svg>
+                                        <span class="font-semibold text-gray-900">Teacher of the Year</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-yellow-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                        </svg>
+                                        <span class="font-semibold text-gray-900">ACP Teacher of the Year - State of Texas</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-xl font-semibold text-indigo-600 mb-3">Professional Service</h4>
+                            <p class="text-gray-600">Mrs. Cannon has served on numerous professional committees and boards, playing a key role in developing and implementing school reform and development initiatives that have positively impacted educational outcomes across multiple institutions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Request a Follow-Up Call</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Ready to transform your school's performance? Contact us today to discuss how EMC can help your educational institution achieve its goals.</p>
+            </div>
+            
+            <div class="max-w-2xl mx-auto">
+
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Contact Page</title>
+                    <style>
+                        body {
+                        font-family: Arial, sans-serif;
+                        text-align: center;
+                        }
+                        .form-container {
+                        max-width: 700px;
+                        margin: 0 auto;
+                        padding: 20px;
+                        }
+                    </style>
+                </head>
+
+                <body>
+                    <h1>Contact Us</h1>
+                    <p>Please fill out the form below and we’ll get back to you soon.</p>
+
+                    <div class="form-container">
+                        <!-- Google Form Embed -->
+                        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd8--GviKDGEHl_TAX_6hRs-bvqakZLdOotzEHXEq3RRcFUyg/viewform?embedded=true"
+                            width="100%"
+                            height="954"
+                            frameborder="0"
+                            marginheight="0"
+                            marginwidth="0">
+                            Loading…
+                        </iframe> -->
+
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdq7DbzD-zEJ9byviYzlqvIaN3I6jnQ8VBg-cOMo3pT5AS4bQ/viewform?embedded=true"
+                            width="100%"
+                            height="954"
+                            frameborder="0"
+                            marginheight="0"
+                            marginwidth="0">
+                            Loading…
+                        </iframe>
+
+                    </div>
+                </body>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">EMC Education Group</h3>
+                    <p class="text-gray-300">Transforming education through research-based professional development and collaborative solutions.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>Professional Development</li>
+                        <li>Data Analysis</li>
+                        <li>Technology Integration</li>
+                        <li>Coaching & Modeling</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p>📧 info@cannoneducational.com</p>
+                        <p>📞 (555) 123-4567</p>
+                        <p>🏢 Educational Excellence Center</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 EMC Education Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            // Get form data
+            const formData = {
+                name: this.name.value,
+                phone: this.phone.value,
+                email: this.email.value,
+                organization: this.organization.value,
+                message: this.message.value
+            };
+            
+            // Validate required fields
+            if (!formData.name || !formData.phone || !formData.email || !formData.organization) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Validate email format
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(formData.email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            fetch("https://script.google.com/macros/s/AKfycbx2SiXSSY1rdUTU7VuzRn5IeKWuwln1cMnQCzYRKfLqP2hLITIRgb5byXH9w72Tkm51/exec", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify(formData)
+            })
+            .then(res => res.json()) // or res.json() if you return JSON
+            .then(data => console.log("Success:", data))
+            .catch(err => console.error("Error:", err));
+
+            // fetch("https://script.google.com/macros/s/AKfycbxlpeyTH2sCsJrEjeAxgaxm2z_8gbDE7T3-3rBO-B1qz_1NqX5F7gIODWuLNLyfcmws/exec", {
+            //     method: "POST",
+            //     headers: {
+            //         "Content-Type": "application/json"
+            //     },
+            //     body: JSON.stringify(formData)
+            //     })
+            //     .then(res => res.json())
+            //     .then(data => console.log("Success:", data))
+            //     .catch(err => console.error("Error:", err));
+           
+            // Scroll to success message
+            document.getElementById('success-message').scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        });
+
+        // Add active state to navigation
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-indigo-600');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('text-indigo-600');
+                }
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9719b6e4a78c9099',t:'MTc1NTYwNzE3My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
